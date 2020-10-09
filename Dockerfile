@@ -36,7 +36,7 @@ RUN apk update && apk add --no-cache \
     mkdir -p glibc-${GLIBC_VERSION} /usr/glibc && \
     ln -s /bin/bash /usr/bin/bash && \
     curl -sL http://mirrors.aggregate.org/archlinux/core/os/${GLIB_ARCH}/glibc-${GLIB_VERSION}-${GLIB_ARCH}.pkg.tar.xz -o glibc-${GLIB_VERSION}-${GLIB_ARCH}.pkg.tar.xz && \
-    tar xf glibc-${GLIB_VERSION}-${GLIB_ARCH}.pkg.tar.xz -C glibc-${GLIBC_VERSION} && \
+    tar -xf glibc-${GLIB_VERSION}-${GLIB_ARCH}.pkg.tar.xz -C glibc-${GLIBC_VERSION} && \
     mv tmp/ld.so.conf /etc/ld.so.conf && \
     cp -a glibc-${GLIBC_VERSION}/usr /usr/glibc/ && \
     glibc-${GLIBC_VERSION}/usr/bin/ldconfig /usr/glibc/usr /usr/glibc/usr/lib && \
