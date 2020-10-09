@@ -6,7 +6,7 @@ ADD ./config/ld.so.conf ./tmp/ld.so.conf
 ADD ./webapp/requirements.txt /tmp/requirements.txt
 
 # used for heroku ps:exec
-ADD ./config/heroku-exec.sh /etc/profile.d/
+# ADD ./config/heroku-exec.sh /etc/profile.d/
 
 
 
